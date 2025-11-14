@@ -94,14 +94,32 @@ Criar um portfólio funcional, modular e fácil de manter, que sirva como **apre
 - MySQL  
 
 ### Você pode testar o projeto na sua máquina!!
+## ⚙️ Como Rodar o Projeto Localmente
 
-## Como rodar o projeto :
+Você pode testar o projeto na sua máquina! Siga os passos abaixo:
 
-Antes de tudo, certifique-se que você já tenha o node.js, mysql workbench instalado e de preferência o git bash também, em sua máquina. 
-1° Passo - Clone o projeto para sua máquina (abra um terminal na área de trabalho e dê o comando "git clone https://github.com/MoreiraGu/aai3_esii")
-2° Passo - Abra o terminal na pasta do projeto, rode o comando npm i para baixar as dependencias
-3° Passo - Copie o conteúdo do arquivo querycreatedb.sql e cole no seu localhost do MySQL workbench, irá criar a database porfólio com os dados já inseridos nas tabelas.
-4° Passo - Altere conforme o seu usuário e senha no arquivo de db.js
-5° Passo - De volta ao terminal, dê o comando npm run dev para rodar o projeto e abra no navegador web com o link http://localhost:3000/
----
+### Pré-requisitos
+Certifique-se de ter os seguintes programas instalados na sua máquina:
+* [**Node.js**](https://nodejs.org/en/)
+* [**MySQL Workbench**](https://www.mysql.com/products/workbench/)
+* **Git Bash**
 
+### Passos
+1.  **Clone o Projeto:** Abra o terminal na área de trabalho e execute o comando:
+    ```bash
+    git clone [https://github.com/MoreiraGu/aai3_esii](https://github.com/MoreiraGu/aai3_esii)
+    ```
+2.  **Instale as Dependências:** Navegue até a pasta do projeto no terminal e rode o comando:
+    ```bash
+    npm i
+    ```
+3.  **Configure o Banco de Dados:**
+    * Copie o conteúdo do arquivo `querycreatedb.sql`.
+    * Cole e execute o conteúdo no seu servidor MySQL .( Isso irá criar a database `portfolio` com os dados iniciais. )
+4.  **Ajuste as Credenciais:**
+    * Edite o arquivo `db.js` e altere as credenciais (usuário e senha) para corresponderem às configurações do seu servidor MySQL local.
+5.  **Inicie o Servidor:** Volte ao terminal, execute o comando para rodar o projeto e acesse-o no seu navegador:
+    ```bash
+    npm run dev
+    ```
+    * Abra o navegador web no link: `http://localhost:3000/`
