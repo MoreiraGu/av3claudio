@@ -107,7 +107,7 @@ Certifique-se de ter os seguintes programas instalados na sua máquina:
 ### Passos
 1.  **Clone o Projeto:** Abra o terminal na área de trabalho e execute o comando:
     ```bash
-    git clone [https://github.com/MoreiraGu/aai3_esii](https://github.com/MoreiraGu/aai3_esii)
+    git clone https://github.com/MoreiraGu/aai3_esii
     ```
 2.  **Instale as Dependências:** Navegue até a pasta do projeto no terminal e rode o comando:
     ```bash
