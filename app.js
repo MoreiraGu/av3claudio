@@ -82,21 +82,41 @@ getById("competencias", "competencias");
 // ================================
 //   POST — Atualizar dados únicos
 // ================================
-app.post('/basicos', async (req, res) => {
+app.put('/basicos', async (req, res) => {
+  const campos = [];
+  const valores = [];
+
+  Object.entries(req.body).forEach(([key, value]) => {
+    campos.push(`${key} = ?`);
+    valores.push(value);
+  });
+
   await pool.query(
-    "UPDATE dados_basicos SET nome=?, profissao=?, descricao=? WHERE id=1",
-    [req.body.nome, req.body.profissao, req.body.descricao]
+    `UPDATE dados_basicos SET ${campos.join(", ")} WHERE id = 1`,
+    valores
   );
+
   res.json({ message: "Dados básicos atualizados" });
 });
 
-app.post('/redes', async (req, res) => {
+
+app.put('/redes', async (req, res) => {
+  const campos = [];
+  const valores = [];
+
+  Object.entries(req.body).forEach(([key, value]) => {
+    campos.push(`${key} = ?`);
+    valores.push(value);
+  });
+
   await pool.query(
-    "UPDATE redes_sociais SET github=?, linkedin=?, instagram=? WHERE id=1",
-    [req.body.github, req.body.linkedin, req.body.instagram]
+    `UPDATE redes_sociais SET ${campos.join(", ")} WHERE id = 1`,
+    valores
   );
+
   res.json({ message: "Redes sociais atualizadas" });
 });
+
 
 // ================================
 //     CRUD COMPLETO (listas)
