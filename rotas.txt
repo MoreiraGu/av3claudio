@@ -1,0 +1,25 @@
+GET /
+GET /dadosBasicos
+GET /redesSociais
+GET /cursos
+GET /projetos
+GET /competencias
+
+GET /cursos/:id
+GET /projetos/:id
+GET /competencias/:id
+
+PUT /basicos
+PUT /redes
+
+POST /cursos
+PUT /cursos/:id
+DELETE /cursos/:id
+
+POST /projetos
+PUT /projetos/:id
+DELETE /projetos/:id
+
+POST /competencias
+PUT /competencias/:id
+DELETE /competencias/:id
